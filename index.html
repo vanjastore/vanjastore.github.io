@@ -1,0 +1,2669 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanja Store</title>
+    <meta name="description" content="Aktifkan Canva Premium, Capcut Premium, Spotify Premium, Prime Video, YouTube Premium Legal di VanjaStore. Aman, cepat, terpercaya, dan harga mulai Rp1.000.">
+    <meta name="keywords" content="aktivasi canva, capcut premium murah, spotify premium, prime video murah, vpn express murah, jasa aktivasi digital, VanjaStore">
+    <meta name="author" content="VanjaStore">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/vanja.jpeg">
+
+    <!-- Font Preconnect & Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="../cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary-color: #f59e0b;
+            --accent-color: #10b981;
+            --success-color: #22c55e;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --dark-bg: #0f172a;
+            --dark-card: #1e293b;
+            --text-light: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #1a202c 100%);
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Loading Screen */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #1a202c 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 4px solid var(--border-color);
+            border-top: 4px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Enhanced Navbar */
+        .navbar {
+            background: rgba(15, 23, 42, 0.95) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(15, 23, 42, 0.98) !important;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .navbar-brand img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .navbar-brand .brand-text {
+            color: var(--text-light);
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--text-light);
+            font-weight: 500;
+            margin: 0 8px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color);
+            background: var(--glass-bg);
+        }
+
+        .navbar-nav .nav-link.active {
+            color: var(--primary-color);
+            background: var(--glass-bg);
+        }
+
+        .visitor-badge {
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-dashboard {
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-dashboard:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+            color: white;
+        }
+
+        /* Enhanced Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #1a202c 50%, var(--dark-bg) 100%);
+            overflow: hidden;
+        }
+
+        .hero-bg-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="%23334155" stroke-width="1" opacity="0.3"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-hero {
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary-hero {
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary-hero:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4);
+            color: white;
+        }
+
+        .btn-outline-hero {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-outline-hero:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--text-muted);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        /* Enhanced Products Section */
+        .products-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%);
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .trust-badges {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .trust-badge {
+            background: linear-gradient(45deg, var(--success-color), var(--accent-color));
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .trust-badge:hover {
+            transform: translateY(-2px);
+        }
+
+        .product-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            height: 100%;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .product-card:hover::before {
+            opacity: 0.1;
+        }
+
+        .product-badges {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            z-index: 10;
+        }
+
+        .product-badge {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .badge-guarantee {
+            background: var(--success-color);
+        }
+
+        .badge-private {
+            background: var(--primary-color);
+        }
+
+        .badge-student {
+            background: #6f42c1;
+        }
+
+        .badge-multi {
+            background: var(--secondary-color);
+        }
+
+        .badge-out-stock {
+            background: var(--danger-color);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+
+        .product-content {
+            padding: 25px;
+        }
+
+        .product-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .product-description {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        .product-price {
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .product-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn-order {
+            background: linear-gradient(45deg, var(--success-color), var(--accent-color));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            font-size: 0.9rem;
+        }
+
+        .btn-order:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(34, 197, 94, 0.3);
+            color: white;
+        }
+
+        .btn-order-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-order-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .product-card.out-of-stock {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .product-card.out-of-stock .btn-order {
+            background: var(--text-muted);
+            cursor: not-allowed;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-card) 100%);
+        }
+
+        .testimonial-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-card) 100%);
+        }
+
+        .contact-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            height: 100%;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            /* Anda punya -5px, lebih bagus -10px */
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .contact-card:hover::before {
+            opacity: 0.1;
+        }
+
+        .contact-icon {
+            width: 80px;
+            /* Anda punya 60px, lebih bagus 80px */
+            height: 80px;
+            margin: 0 auto 20px;
+            /* Anda punya 15px, lebih bagus 20px */
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            /* Anda punya 1.5rem, lebih bagus 2rem */
+            color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover .contact-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Enhanced Music Player */
+        .music-player {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 25px;
+            margin-top: 50px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .music-control-btn {
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 auto 20px;
+            font-weight: 600;
+        }
+
+        .music-control-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+        }
+
+        .music-progress-container {
+            margin-bottom: 15px;
+        }
+
+        .music-progress {
+            width: 100%;
+            height: 8px;
+            background: var(--border-color);
+            border-radius: 4px;
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .music-progress::-webkit-progress-bar {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+
+        .music-progress::-webkit-progress-value {
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            border-radius: 4px;
+        }
+
+        .music-time-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .volume-slider {
+            flex: 1;
+            height: 5px;
+            background: var(--border-color);
+            border-radius: 5px;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Enhanced Footer */
+        .footer {
+            background: var(--dark-bg);
+            padding: 60px 0 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-muted);
+            text-decoration: none;
+            line-height: 1.8;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: var(--glass-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: 30px;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        /* Snowflake Effects */
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            z-index: 1000;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.2em;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-hero {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .navbar-nav {
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            .visitor-badge {
+                margin: 20px auto;
+                width: fit-content;
+            }
+
+            .trust-badges {
+                justify-content: center;
+            }
+
+            .product-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-order {
+                width: 100%;
+                max-width: 250px;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .product-content {
+                padding: 20px;
+            }
+
+            .music-player {
+                padding: 20px;
+                margin: 30px 15px 0;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--dark-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-dark);
+        }
+
+        .product-card {
+            will-change: transform, opacity;
+            transform: translateZ(0);
+            /* Hardware acceleration */
+        }
+
+        [data-aos] {
+            transition-duration: 0.6s !important;
+        }
+
+        /* Faster reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            /* Kurangi dari 24px */
+            transition: opacity 0.6s ease, transform 0.6s ease;
+            /* Kurangi dari 0.8s */
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+
+
+
+        /* Product Pricing Display */
+        .product-pricing {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 15px;
+            margin: 20px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .pricing-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .pricing-option:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        .price-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .price-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .price-value {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 0 10px;
+        }
+
+        .price-duration {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            background: rgba(16, 185, 129, 0.15);
+            padding: 3px 8px;
+            border-radius: 10px;
+            border: 1px solid var(--accent-color);
+            white-space: nowrap;
+        }
+
+        /* Clear Action Section */
+        .product-actions {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid var(--accent-color);
+            position: relative;
+        }
+
+        .action-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background: linear-gradient(45deg, var(--accent-color), var(--success-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .order-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Enhanced WhatsApp Order Buttons */
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+        }
+
+        .btn-whatsapp::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-whatsapp:hover::before {
+            left: 100%;
+        }
+
+        .btn-whatsapp.secondary {
+            background: linear-gradient(135deg, #0088cc 0%, #005577 100%);
+            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.2);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            color: white;
+        }
+
+        .btn-whatsapp.secondary:hover {
+            box-shadow: 0 8px 25px rgba(0, 136, 204, 0.3);
+        }
+
+        .btn-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-content i {
+            font-size: 1.4rem;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .btn-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            flex: 1;
+        }
+
+        .btn-main {
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-sub {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        /* Order Note */
+        .order-note {
+            text-align: center;
+            margin-top: 12px;
+            padding: 8px;
+            background: rgba(37, 211, 102, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(37, 211, 102, 0.3);
+        }
+
+        .order-note small {
+            color: var(--accent-color);
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .btn-whatsapp {
+                padding: 10px 12px;
+            }
+
+            .btn-content {
+                gap: 8px;
+            }
+
+            .btn-main {
+                font-size: 0.85rem;
+            }
+
+            .btn-sub {
+                font-size: 0.7rem;
+            }
+
+            .price-info {
+                flex-direction: column;
+                gap: 5px;
+                align-items: flex-start;
+            }
+
+            .price-value {
+                margin: 0;
+            }
+        }
+
+        .contact-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .contact-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Enhanced Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://wa.me/62881027272909">
+                <img src="assets/img/vanja.jpeg" alt="Vanja Store Logo">
+                <span class="brand-text">Vanja Store</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-info-circle me-2"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-mobile-alt me-2"></i>Apps
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-star me-2"></i>Features
+                        </a>
+                    </li>
+
+                    <!-- Info Dropdown menggantikan Pricing -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarInfoDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-info me-2"></i>Info
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarInfoDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-file-contract me-2"></i>Syarat & Ketentuan
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-undo me-2"></i>Kebijakan Refund
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-envelope me-2"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
+                    <div class="visitor-badge">
+                        <i class="fas fa-users"></i>
+                        <span>User Online: <strong id="userCount">491</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg-animation"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    Produk <span class="text-gradient">Vanja Store</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <!--Platform terpercaya untuk aktivasi layanan premium digital dengan harga terjangkau. -->
+                    <!--Dapatkan akses ke Canva Pro, CapCut Premium, Spotify Student, dan banyak lagi!-->
+                    Produk Aplikasi Premium Terpercaya
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://www.youtube.com/@VanjaStore" class="btn-hero btn-primary-hero">
+                        <i class="fab fa-youtube"></i>
+                        Subscribe Channel
+                    </a>
+                    <a href="#contact" class="btn-hero btn-outline-hero">
+                        <i class="fas fa-phone"></i>
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down fa-2x"></i>
+        </div>
+    </section>
+
+    <!-- Enhanced Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>🎁 Katalog Produk Premium</h2>
+                <!--<p class="section-subtitle">-->
+                <!--    Pilih layanan digital terbaik sesuai kebutuhanmu. Semua produk siap pakai & langsung aktif via WhatsApp 🚀-->
+                <!--</p>-->
+                <div class="trust-badges">
+                    <span class="trust-badge">
+                        <i class="fas fa-check-circle"></i>
+                        Full Garansi
+                    </span>
+                    <span class="trust-badge">
+                        <i class="fas fa-bolt"></i>
+                        Aktivasi Cepat
+                    </span>
+                    <span class="trust-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        Aman & Terpercaya
+                    </span>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+
+                <!-- ChatGPT Premium -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="10">
+                    <div class="product-card">
+                        <div class="product-badges">
+                            <span class="product-badge badge-private">Private Account</span>
+                            <span class="product-badge badge-guarantee">Full Garansi</span>
+                        </div>
+                        <img src="assets/img/chatgpt_logo.jpg" alt="ChatGPT Premium" class="product-image">
+                        <div class="product-content">
+                            <h4 class="product-title">CHATGPT PREMIUM</h4>
+                            <p class="product-description">
+                                Akses ChatGPT-5 tanpa batas, upload file, analisis data, web browsing, dan fitur AI terdepan untuk produktivitas maksimal.
+                            </p>
+
+                            <!-- Enhanced Price Display -->
+                            <div class="product-pricing">
+                                <div class="pricing-option">
+                                    <div class="price-info">
+                                        <span class="price-label">👥 Sharing Account</span>
+                                        <span class="price-value">Rp 35.000</span>
+                                        <span class="price-duration">1 Bulan</span>
+                                    </div>
+                                </div>
+
+                                <div class="pricing-option">
+                                    <div class="price-info">
+                                        <span class="price-label">👤 Private Account (1 User)</span>
+                                        <span class="price-value">Rp 190.000</span>
+                                        <span class="price-duration">1 Bulan</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Clear Order Action -->
+                            <div class="product-actions">
+                                <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                <div class="order-buttons">
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20ChatGPT%20Premium%20Sharing%20Account%201%20Bulan%20Rp35.000"
+                                        class="btn-whatsapp primary" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER SHARING</span>
+                                                <span class="btn-sub">Rp 35.000 • 1 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20ChatGPT%20Premium%20Private%20Account%201%20Bulan%20Rp100.000"-->
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20ChatGPT%20Premium%20Private%20Account%201%20Bulan%20Rp190.000"
+                                        class="btn-whatsapp secondary" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER PRIVATE</span>
+                                                <span class="btn-sub">Rp 190.000 • 1 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+
+                                </div>
+                                <div class="order-note">
+                                    <small>💬 Klik tombol di atas untuk order</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Google AI Pro -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="20">
+                    <div class="product-card">
+                        <div class="product-badges">
+                            <span class="product-badge badge-private">Private Account</span>
+                            <span class="product-badge badge-guarantee">Full Garansi</span>
+                        </div>
+                        <img src="assets/img/gemini_logo.png" alt="Google AI Pro" class="product-image">
+                        <div class="product-content">
+                            <h4 class="product-title">GOOGLE AI PRO</h4>
+                            <p class="product-description">
+                                Akses Google Gemini 2.5 Pro + Drive 2TB + Veo 3 video generation + Flow AI filmmaking + NotebookLM research assistant dengan fitur terlengkap.
+                            </p>
+
+                            <!-- Enhanced Price Display -->
+                            <div class="product-pricing">
+                                <div class="pricing-option">
+                                    <div class="price-info">
+                                        <span class="price-label">🗓️ Paket Bulanan</span>
+                                        <span class="price-value">Rp 30.000</span>
+                                        <span class="price-duration">1 Bulan</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-option popular">
+                                    <div class="price-info">
+                                        <span class="price-label">⭐ Paket Tahunan (Hemat 66%)</span>
+                                        <span class="price-value">Rp 60.000</span>
+                                        <span class="price-duration">1 Tahun</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Clear Order Action -->
+                            <div class="product-actions">
+                                <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                <div class="order-buttons">
+                                    <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Google%20AI%20Pro%201%20Bulan%20Rp10.000%20-%20Akun%20Private"-->
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Google%20AI%20Pro%201%20Bulan%20Rp30.000%20-%20Akun%20Private"
+                                        class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER BULANAN</span>
+                                                <span class="btn-sub">Rp 30.000 • 1 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Google%20AI%20Pro%2012%20Bulan%20Rp40.000%20-%20Akun%20Private"-->
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Google%20AI%20Pro%2012%20Bulan%20Rp60.000%20-%20Akun%20Private"
+                                        class="btn-whatsapp secondary" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER TAHUNAN</span>
+                                                <span class="btn-sub">Rp 60.000 • 1 Tahun</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="order-note">
+                                    <small>💬 Klik tombol di atas untuk order</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Perplexity Premium -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="30">
+                    <div class="product-card">
+                        <div class="product-badges">
+                            <span class="product-badge badge-private">Private Account</span>
+                            <span class="product-badge badge-guarantee">Full Garansi</span>
+                        </div>
+                        <img src="assets/img/perplexity.png" alt="Perplexity Premium" class="product-image">
+                        <div class="product-content">
+                            <h4 class="product-title">PERPLEXITY PREMIUM</h4>
+                            <p class="product-description">
+                                Akses premium dengan multiple AI models terbaru: Claude Sonnet 4.0, GPT-5 (NEW), Gemini 2.5 Pro 06-05, GPT-5 Thinking (NEW), Claude Sonnet 4.0 Thinking, dan Grok 4.
+                            </p>
+
+                            <!-- Enhanced Price Display -->
+                            <div class="product-pricing">
+                                <div class="pricing-option popular">
+                                    <div class="price-info">
+                                        <span class="price-label">🔍 Paket 1 Bulan</span>
+                                        <span class="price-value">Rp 30.000</span>
+                                        <span class="price-duration">1 Bulan</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-option">
+                                    <div class="price-info">
+                                        <span class="price-label">🔍 Paket 3 Bulan</span>
+                                        <span class="price-value">Belum Tersedia</span>
+                                        <span class="price-duration">Belum Tersedia</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Clear Order Action -->
+                            <div class="product-actions">
+                                <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                <div class="order-buttons">
+                                    <!-- Order 1 Bulan -->
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Perplexity%20Premium%201%20Bulan%20Rp30.000%20-%20Akun%20Private"
+                                        class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER 1 BULAN</span>
+                                                <span class="btn-sub">Rp 30.000 • 1 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <!-- Order 3 Bulan -->
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Perplexity%20Premium%203%20Bulan%20Rp0%20-%20Akun%20Private"
+                                        class="btn-whatsapp secondary" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">Belum Tersedia</span>
+                                                <span class="btn-sub">Rp 0</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="order-note">
+                                    <small>💬 Klik tombol di atas untuk order</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Scite AI Premium -->
+
+                <!-- DeepL Pro  -->
+                
+                <!-- SmallPDF Pro -->
+                
+                <!-- Tidal Premium -->
+                
+                <!-- GitHub Copilot Pro -->
+                
+                <!-- VIU Premium -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="90">
+                    <div class="product-card">
+                        <div class="product-badges">
+                            <span class="product-badge badge-private">Private Account</span>
+                            <span class="product-badge badge-guarantee">Full Garansi</span>
+                        </div>
+                        <img src="assets/img/viu.png" alt="VIU Premium" class="product-image">
+                        <div class="product-content">
+                            <h4 class="product-title">VIU PREMIUM</h4>
+                            <p class="product-description">
+                                Streaming drama Asia, K-Drama, film, dan variety show tanpa iklan dengan kualitas HD. 
+                                Download konten untuk menonton offline, akses cepat episode terbaru, dan subtitle multibahasa.
+                            </p>
+                
+                            <!-- Enhanced Price Display -->
+                            <div class="product-pricing">
+                                <div class="pricing-option popular">
+                                    <div class="price-info">
+                                        <span class="price-label">📺 Paket 1 Bulan</span>
+                                        <span class="price-value">Rp 10.000</span>
+                                        <span class="price-duration">1 Bulan</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-option">
+                                    <div class="price-info">
+                                        <span class="price-label">📺 Paket 2 Bulan</span>
+                                        <span class="price-value">Rp 15.000</span>
+                                        <span class="price-duration">2 Bulan</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-option">
+                                    <div class="price-info">
+                                        <span class="price-label">📺 Paket 3 Bulan</span>
+                                        <span class="price-value">Rp 18.000</span>
+                                        <span class="price-duration">3 Bulan</span>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Clear Order Action -->
+                            <div class="product-actions">
+                                <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                <div class="order-buttons">
+                                    <!-- Order 1 Bulan -->
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20VIU%20Premium%201%20Bulan%20Rp10.000%20-%20Akun%20Private"
+                                        class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER 1 BULAN</span>
+                                                <span class="btn-sub">Rp 10.000 • 1 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                
+                                    <!-- Order 2 Bulan -->
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20VIU%20Premium%202%20Bulan%20Rp15.000%20-%20Akun%20Private"
+                                        class="btn-whatsapp secondary" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER 2 BULAN</span>
+                                                <span class="btn-sub">Rp 15.000 • 2 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                
+                                    <!-- Order 3 Bulan -->
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20VIU%20Premium%203%20Bulan%20Rp18.000%20-%20Akun%20Private"
+                                        class="btn-whatsapp secondary" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER 3 BULAN</span>
+                                                <span class="btn-sub">Rp 18.000 • 3 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="order-note">
+                                    <small>💬 Klik tombol di atas untuk order</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Zoom Premium -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Zoom%20Premium%202%28Hari%20Rp60.000%20-%20Akun%20Private" class="full-card-link" style="text-decoration: none; color: inherit;" target="_blank">
+                        <div class="product-card">
+                            <div class="product-badges">
+                                <span class="product-badge badge-private">Private Account</span>
+                                <span class="product-badge badge-guarantee">Full Garansi</span>
+                                <!--<span class="product-badge badge-business">Business Solution</span>-->
+                            </div>
+                            <img src="assets/img/zoom.png" alt="Zoom Premium" class="product-image">
+                            <div class="product-content">
+                                <h4 class="product-title">ZOOM PREMIUM</h4>
+                                <p class="product-description">
+                                    Meeting tanpa batas waktu hingga 30 jam, rekaman cloud 5GB, fitur berbagi layar, AI Companion, enkripsi end-to-end, dan streaming.
+                                </p>
+
+                                <!-- Enhanced Price Display -->
+                                <div class="product-pricing">
+                                    <div class="pricing-option popular">
+                                        <div class="price-info">
+                                            <span class="price-label">📹 Paket Zoom Premium</span>
+                                            <span class="price-value">Rp 60.000</span>
+                                            <span class="price-duration">28 Hari</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Clear Order Action -->
+                                <div class="product-actions">
+                                    <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                    <div class="order-buttons">
+                                        <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Zoom%20Premium%202%20Minggu%20Rp10.000" -->
+                                        <span class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                            <div class="btn-content">
+                                                <i class="fab fa-whatsapp"></i>
+                                                <div class="btn-text">
+                                                    <span class="btn-main">ORDER PREMIUM</span>
+                                                    <span class="btn-sub">Rp 60.000 • 28 Hari</span>
+                                                </div>
+                                            </div>
+                                            <!--</a>-->
+                                    </div>
+                                    <div class="order-note">
+                                        <small>💬 Klik tombol di atas untuk order</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- CamScanner Premium -->
+            
+                <!-- Scribd Premium -->
+                
+                <!-- PicsArt Premium -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="130">
+                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20PicsArt%20Premium%201%20Bulan%20Rp15.000%20-%20Akun%20Private" class="full-card-link" style="text-decoration: none; color: inherit;" target="_blank">
+                        <div class="product-card">
+                            <div class="product-badges">
+                                <span class="product-badge badge-private">Private Account</span>
+                                <span class="product-badge badge-guarantee">Full Garansi</span>
+                                <!--<span class="product-badge badge-creative">Creative Studio</span>-->
+                            </div>
+                            <img src="assets/img/picsart.jpg" alt="PicsArt Premium" class="product-image">
+                            <div class="product-content">
+                                <h4 class="product-title">PICSART PREMIUM</h4>
+                                <p class="product-description">
+                                    Edit foto & video dengan 15+ AI tools canggih, jutaan stok gambar premium, AI Image Generator, background remover, template eksklusif, font premium, dan 20GB cloud storage.
+                                </p>
+
+                                <!-- Enhanced Price Display -->
+                                <div class="product-pricing">
+                                    <div class="pricing-option popular">
+                                        <div class="price-info">
+                                            <span class="price-label">🎨 Paket PicsArt Premium</span>
+                                            <span class="price-value">Rp 15.000</span>
+                                            <span class="price-duration">1 Bulan</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Clear Order Action -->
+                                <div class="product-actions">
+                                    <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                    <div class="order-buttons">
+                                        <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20PicsArt%20Premium%201%20Bulan%20Rp15.000" -->
+                                        <span class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                            <div class="btn-content">
+                                                <i class="fab fa-whatsapp"></i>
+                                                <div class="btn-text">
+                                                    <span class="btn-main">ORDER PREMIUM</span>
+                                                    <span class="btn-sub">Rp 15.000 • 1 Bulan</span>
+                                                </div>
+                                            </div>
+                                            <!--</a>-->
+                                    </div>
+                                    <div class="order-note">
+                                        <small>💬 Klik tombol di atas untuk order</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- Remini Premium -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140">
+                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Remini%20Premium%201%20Bulan%20Rp25.000%20-%20Akun%20Private" class="full-card-link" style="text-decoration: none; color: inherit;" target="_blank">
+                        <div class="product-card">
+                            <div class="product-badges">
+                                <span class="product-badge badge-private">Private Account</span>
+                                <span class="product-badge badge-guarantee">Full Garansi</span>
+                                <!--<span class="product-badge badge-new">AI Photo Enhancement</span>-->
+                            </div>
+                            <img src="assets/img/remini.png" alt="Remini Premium" class="product-image">
+                            <div class="product-content">
+                                <h4 class="product-title">REMINI PREMIUM</h4>
+                                <p class="product-description">
+                                    Akses premium untuk AI photo enhancer terbaik. Tingkatkan kualitas foto dengan teknologi AI terdepan, ubah foto blur menjadi HD, dan dapatkan hasil foto berkualitas profesional. <strong>Khusus untuk Website.</strong>
+                                </p>
+
+                                <!-- Enhanced Price Display -->
+                                <div class="product-pricing">
+                                    <div class="pricing-option popular">
+                                        <div class="price-info">
+                                            <span class="price-label">📸 Paket Remini Premium</span>
+                                            <span class="price-value">Rp 25.000</span>
+                                            <span class="price-duration">1 Bulan</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Clear Order Action -->
+                                <div class="product-actions">
+                                    <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                    <div class="order-buttons">
+                                        <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Remini%20Premium%201%20Minggu%20Rp7.000" -->
+                                        <span class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                            <div class="btn-content">
+                                                <i class="fab fa-whatsapp"></i>
+                                                <div class="btn-text">
+                                                    <span class="btn-main">ORDER PREMIUM</span>
+                                                    <span class="btn-sub">Rp 25.000 • 1 Bulan</span>
+                                                </div>
+                                            </div>
+                                            <!--</a>-->
+                                    </div>
+                                    <div class="order-note">
+                                        <small>💬 Klik tombol di atas untuk order</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- Spotify Premium (Ready) -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+                    <div class="product-card">
+                        <div class="product-badges">
+                            <span class="product-badge badge-private">Famplan</span>
+                            <span class="product-badge badge-guarantee">Full Garansi</span>
+                        </div>
+                        <img src="assets/img/spotify_2.png" alt="Spotify Premium" class="product-image">
+                        <div class="product-content">
+                            <h4 class="product-title">SPOTIFY PREMIUM</h4>
+                            <p class="product-description">
+                                Streaming musik tanpa iklan, download offline unlimited, kualitas audio tinggi, skip tanpa batas, 
+                                listening party K-Pop, dan jutaan lagu dari seluruh dunia.
+                            </p>
+                
+                            <!-- Enhanced Price Display -->
+                            <div class="product-pricing">
+                                <div class="pricing-option popular">
+                                    <div class="price-info">
+                                        <span class="price-label">🎵 Paket 1 Bulan</span>
+                                        <span class="price-value">Rp 28.000</span>
+                                        <span class="price-duration">1 Bulan</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-option">
+                                    <div class="price-info">
+                                        <span class="price-label">🎵 Paket 2 Bulan</span>
+                                        <span class="price-value">Rp 42.000</span>
+                                        <span class="price-duration">2 Bulan</span>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Clear Order Action -->
+                            <div class="product-actions">
+                                <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                <div class="order-buttons">
+                                    <!-- Order 1 Bulan -->
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Spotify%20Premium%201%20Bulan%20Rp28.000%20-%20Akun%20Private"
+                                        class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER 1 BULAN (INDPLAN)</span>
+                                                <span class="btn-sub">Rp 30.000 • 1 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                
+                                    <!-- Order 2 Bulan -->
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Spotify%20Premium%202%20Bulan%20Rp42.000%20-%20Akun%20Private"
+                                        class="btn-whatsapp secondary" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER 2 BULAN (FAMPLAN)</span>
+                                                <span class="btn-sub">Rp 42.000 • 2 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="order-note">
+                                    <small>💬 Klik tombol di atas untuk order</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Apple Music -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Apple%20Music%20Premium%202%20Bulan%20Rp25.000%20-%20Akun%20Private" class="full-card-link" style="text-decoration: none; color: inherit;" target="_blank">
+                        <div class="product-card">
+                            <div class="product-badges">
+                                <span class="product-badge badge-private">Private Account</span>
+                                <span class="product-badge badge-guarantee">Full Garansi</span>
+                                <!--<span class="product-badge badge-android">Khusus Android</span>-->
+                            </div>
+                            <img src="assets/img/apple_music.png" alt="Apple Music Premium" class="product-image">
+                            <div class="product-content">
+                                <h4 class="product-title">APPLE MUSIC PREMIUM</h4>
+                                <p class="product-description">
+                                    Streaming musik tanpa iklan, download offline unlimited, kualitas audio lossless, akses ke radio Apple Music 1, dan lebih dari 100 juta lagu dari seluruh dunia. <strong>Khusus untuk Android.</strong>
+                                </p>
+
+                                <!-- Enhanced Price Display -->
+                                <div class="product-pricing">
+                                    <div class="pricing-option popular">
+                                        <div class="price-info">
+                                            <span class="price-label">🎵 Paket Apple Music Premium</span>
+                                            <span class="price-value">Rp 25.000</span>
+                                            <span class="price-duration">2 Bulan</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Clear Order Action -->
+                                <div class="product-actions">
+                                    <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                    <div class="order-buttons">
+                                        <span class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                            <div class="btn-content">
+                                                <i class="fab fa-whatsapp"></i>
+                                                <div class="btn-text">
+                                                    <span class="btn-main">ORDER PREMIUM</span>
+                                                    <span class="btn-sub">Rp 25.000 • 1 Bulan</span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="order-note">
+                                        <small>💬 Klik tombol di atas untuk order</small>
+                                        <!--<small class="android-note">📱 Khusus untuk perangkat Android</small>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- Studocu Premium -->
+               
+                <!-- Alight Motion Premium -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="170">
+                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Alight%20Motion%20Premium%2012%20Bulan%20Rp20.000%20-%20Akun%20Private" class="full-card-link" style="text-decoration: none; color: inherit;" target="_blank">
+                        <div class="product-card">
+                            <div class="product-badges">
+                                <span class="product-badge badge-private">Private Account</span>
+                                <span class="product-badge badge-guarantee">Full Garansi</span>
+                                <!--<span class="product-badge badge-video">Motion Graphics Pro</span>-->
+                            </div>
+                            <img src="assets/img/alightmotion.png" alt="Alight Motion Premium" class="product-image">
+                            <div class="product-content">
+                                <h4 class="product-title">ALIGHT MOTION PREMIUM</h4>
+                                <p class="product-description">
+                                    Video editing profesional tanpa watermark, unlimited layers, keyframe animation, 2000+ font premium, efek motion graphics, blending modes, export 4K HD, dan semua preset premium terbuka.
+                                </p>
+
+                                <!-- Enhanced Price Display -->
+                                <div class="product-pricing">
+                                    <div class="pricing-option popular">
+                                        <div class="price-info">
+                                            <span class="price-label">🎬 Paket Alight Motion Premium</span>
+                                            <span class="price-value">Rp 20.000</span>
+                                            <span class="price-duration">1 Bulan Private</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Clear Order Action -->
+                                <div class="product-actions">
+                                    <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                    <div class="order-buttons">
+                                        <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Alight%20Motion%20Premium%2012%20Bulan%20Rp30.000" -->
+                                        <span class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                            <div class="btn-content">
+                                                <i class="fab fa-whatsapp"></i>
+                                                <div class="btn-text">
+                                                    <span class="btn-main">ORDER PREMIUM</span>
+                                                    <span class="btn-sub">Rp 20.000 • 1 Bulan</span>
+                                                </div>
+                                            </div>
+                                            <!--</a>-->
+                                    </div>
+                                    <div class="order-note">
+                                        <small>💬 Klik tombol di atas untuk order</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- CapCut Premium -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="180">
+                    <div class="product-card">
+                        <div class="product-badges">
+                            <span class="product-badge badge-private">Private Account</span>
+                            <span class="product-badge badge-guarantee">Full Garansi</span>
+                            <!--<span class="product-badge badge-ai">AI-Powered Editor</span>-->
+                        </div>
+                        <img src="assets/img/capcut.jpg" alt="CapCut Premium" class="product-image">
+                        <div class="product-content">
+                            <h4 class="product-title">CAPCUT PREMIUM</h4>
+                            <p class="product-description">
+                                Video editing tanpa watermark dengan AI tools canggih: auto caption, text-to-speech 41 bahasa, template premium unlimited, efek cinematic 4K, isolasi vokal, dan export hingga 4K 60fps.
+                            </p>
+
+                            <!-- Enhanced Price Display -->
+                            <div class="product-pricing">
+                                <div class="pricing-option">
+                                    <div class="price-info">
+                                        <span class="price-label">⚡ Paket Capcut Premium</span>
+                                        <span class="price-value">Rp 12.000</span>
+                                        <span class="price-duration">1 Bulan Sharing</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-option popular">
+                                    <div class="price-info">
+                                        <span class="price-label">🎥 Paket Capcut Premium</span>
+                                        <span class="price-value">Rp 25.000</span>
+                                        <span class="price-duration">1 Bulan Private</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Clear Order Action -->
+                            <div class="product-actions">
+                                <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                <div class="order-buttons">
+                                    <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20CapCut%20Premium%201%20Minggu%20Rp6.000" -->
+                                    <a href="capcut7hari.html"
+                                        class="btn-whatsapp primary popular" target="_blank">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER PREMIUM</span>
+                                                <span class="btn-sub">Rp 12.000 • 1 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20CapCut%20Premium%201%20Bulan%20Rp20.000" -->
+                                    <a href="capcut30hari.html"
+                                        class="btn-whatsapp secondary" target="_blank">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER PREMIUM</span>
+                                                <span class="btn-sub">Rp 25.000 • 1 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="order-note">
+                                    <small>💬 Klik tombol di atas untuk order</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- YouTube Premium -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="190">
+                    <a href="youtube.html" class="full-card-link" style="text-decoration: none; color: inherit;" target="_blank">
+                        <div class="product-card">
+                            <div class="product-badges">
+                                <span class="product-badge badge-private">Private Account</span>
+                                <span class="product-badge badge-guarantee">Full Garansi</span>
+                                <!--<span class="product-badge badge-entertainment">Ad-Free Streaming</span>-->
+                            </div>
+                            <img src="assets/img/youtube.jpg" alt="YouTube Premium" class="product-image">
+                            <div class="product-content">
+                                <h4 class="product-title">YOUTUBE PREMIUM</h4>
+                                <p class="product-description">
+                                    Streaming tanpa iklan, download video offline unlimited, background play saat layar terkunci, YouTube Music Premium included, dan akses YouTube Originals.
+                                </p>
+
+                                <!-- Enhanced Price Display -->
+                                <div class="product-pricing">
+                                    <div class="pricing-option popular">
+                                        <div class="price-info">
+                                            <span class="price-label">📺 Paket YouTube Premium</span>
+                                            <span class="price-value">Rp 15.000</span>
+                                            <span class="price-duration">1 Bulan</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Clear Order Action -->
+                                <div class="product-actions">
+                                    <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                    <div class="order-buttons">
+                                        <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20YouTube%20Premium%201%20Bulan%20Rp15.000" -->
+                                        <span class="btn-whatsapp primary popular">
+                                            <div class="btn-content">
+                                                <i class="fab fa-whatsapp"></i>
+                                                <div class="btn-text">
+                                                    <span class="btn-main">ORDER PREMIUM</span>
+                                                    <span class="btn-sub">Rp 15.000 • 1 Bulan</span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="order-note">
+                                        <small>💬 Klik tombol di atas untuk order</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+                <!-- Figma Education -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Figma%20Education%2012%20Bulan%20Rp40.000%20-%20Akun%20Private" class="full-card-link" style="text-decoration: none; color: inherit;" target="_blank">
+                        <div class="product-card">
+                            <div class="product-badges">
+                                <span class="product-badge badge-private">Private Account</span>
+                                <span class="product-badge badge-guarantee">Full Garansi</span>
+                                <!--<span class="product-badge badge-education">Design Pro</span>-->
+                            </div>
+                            <img src="assets/img/figma.png" alt="Figma Education" class="product-image">
+                            <div class="product-content">
+                                <h4 class="product-title">FIGMA EDUCATION</h4>
+                                <p class="product-description">
+                                    Akses Figma Professional Plan gratis: unlimited files & projects, team-wide design libraries, prototyping, Dev Mode inspection, FigJam whiteboarding, dan kolaborasi real-time unlimited.
+                                </p>
+
+                                <!-- Enhanced Price Display -->
+                                <div class="product-pricing">
+                                    <div class="pricing-option popular">
+                                        <div class="price-info">
+                                            <span class="price-label">🎨 Paket Figma Education</span>
+                                            <span class="price-value">Rp 40.000</span>
+                                            <span class="price-duration">12 Bulan</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Clear Order Action -->
+                                <div class="product-actions">
+                                    <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                    <div class="order-buttons">
+                                        <!--<a href="https://api.whatsapp.com/send?phone=62881027272909&text=Halo%20Admin%2C%20saya%20ingin%20memesan%20Figma%20Education%201%20Tahun%20Rp40.000" -->
+                                        <span class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                            <div class="btn-content">
+                                                <i class="fab fa-whatsapp"></i>
+                                                <div class="btn-text">
+                                                    <span class="btn-main">ORDER EDUCATION</span>
+                                                    <span class="btn-sub">Rp 40.000 • 12 Bulan</span>
+                                                </div>
+                                            </div>
+                                            <!--</a>-->
+                                    </div>
+                                    <div class="order-note">
+                                        <small>💬 Klik tombol di atas untuk order</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- Canva Premium -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="210">
+                    <div class="product-card">
+                        <div class="product-badges">
+                            <span class="product-badge badge-private">Private Account</span>
+                            <span class="product-badge badge-guarantee">Full Garansi</span>
+                        </div>
+                        <img src="assets/img/canva.jpg" alt="Canva Premium" class="product-image">
+                        <div class="product-content">
+                            <h4 class="product-title">CANVA PREMIUM</h4>
+                            <p class="product-description">
+                                Akses unlimited ke 100+ juta konten premium, 25+ AI tools (Background Remover, Magic Eraser, Text Generator), Brand Kit profesional, templates premium, resize otomatis, dan 1TB cloud storage.
+                            </p>
+                
+                            <!-- Enhanced Price Display -->
+                            <div class="product-pricing">
+                                <!-- Varian 1 Bulan -->
+                                <div class="pricing-option popular">
+                                    <div class="price-info">
+                                        <span class="price-label">🎨 Paket Canva Premium</span>
+                                        <span class="price-value">Rp 5.000</span>
+                                        <span class="price-duration">1 Bulan</span>
+                                    </div>
+                                </div>
+                
+                                <!-- Varian 1 Tahun (Coming Soon) -->
+                                <div class="pricing-option disabled">
+                                    <div class="price-info">
+                                        <span class="price-label">✨ Paket Canva Premium</span>
+                                        <span class="price-value">Rp 20.000</span>
+                                        <span class="price-duration">1 Tahun</span>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Clear Order Action -->
+                            <div class="product-actions">
+                                <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                <div class="order-buttons">
+                                    <!-- Tombol aktif -->
+                                    <a href="#"
+                                        class="btn-whatsapp primary popular" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER 1 BULAN</span>
+                                                <span class="btn-sub">Rp 5.000 • 1 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                
+                                    <!-- Tombol Coming Soon -->
+                                    <!--<button class="btn-whatsapp secondary disabled" disabled>-->
+                                    <a href="#"
+                                        class="btn-whatsapp secondary" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER 1 TAHUN</span>
+                                                <span class="btn-sub">Rp 20.000 • 1 Tahun</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="order-note">
+                                    <small>💬 Klik tombol di atas untuk order</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Vidio Platinum -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="220">
+                    <div class="product-card">
+                        <div class="product-badges">
+                            <span class="product-badge badge-private">Private Account</span>
+                            <span class="product-badge badge-guarantee">Full Garansi</span>
+                        </div>
+                        <img src="assets/img/vidio.jpg" alt="Vidio Platinum" class="product-image">
+                        <div class="product-content">
+                            <h4 class="product-title">VIDIO PLATINUM</h4>
+                            <p class="product-description">
+                                Akses semua channel premium dan tayangan eksklusif Vidio dengan kualitas HD (konten PLATINUM).
+                            </p>
+
+                            <!-- Enhanced Price Display -->
+                            <div class="product-pricing">
+                                <div class="pricing-option">
+                                    <div class="price-info">
+                                        <span class="price-label">📺 Khusus TV</span>
+                                        <span class="price-value">Rp 25.000</span>
+                                        <span class="price-duration">12 Bulan</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-option">
+                                    <div class="price-info">
+                                        <span class="price-label">📱 All Device (HP, TV, Laptop)</span>
+                                        <span class="price-value">Rp 35.000</span>
+                                        <span class="price-duration">1 Bulan</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Clear Order Action -->
+                            <div class="product-actions">
+                                <h5 class="action-title">🛒 PESAN SEKARANG</h5>
+                                <div class="order-buttons">
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20pesan%20Vidio%20Platinum%20Khusus%20TV%2012%20Bulan%20Rp25.000%20-%20Akun%20Private"
+                                        class="btn-whatsapp primary" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER PAKET TV</span>
+                                                <span class="btn-sub">Rp 25.000 • 12 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Halo%20Admin%2C%20saya%20ingin%20pesan%20Vidio%20Platinum%20All%20Device%201%20Bulan%20Rp35.000%20-%20Akun%20Private"
+                                        class="btn-whatsapp secondary" target="_blank" rel="noopener noreferrer">
+                                        <div class="btn-content">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div class="btn-text">
+                                                <span class="btn-main">ORDER ALL DEVICE</span>
+                                                <span class="btn-sub">Rp 35.000 • 1 Bulan</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="order-note">
+                                    <small>💬 Klik tombol di atas untuk order</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Customer Testimonials</h2>
+                <p class="section-subtitle">Silakan cek testimoni pelanggan untuk meningkatkan kepercayaan kamu sebelum membeli.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <a href="#" target="_blank" class="text-decoration-none">
+                            <img src="assets/img/check.jpg" alt="Bukti Testimoni" class="testimonial-image">
+                            <h4 class="text-light mb-3">Lihat Testimoni Pembeli</h4>
+                            <p class="text">Klik gambar di atas untuk melihat bukti transfer & feedback pelanggan secara langsung di Google Drive.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Hubungi Kami</h2>
+                <p>Tim support kami siap membantu Anda 24/7. Pilih cara yang paling nyaman untuk berkomunikasi dengan kami.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3 class="contact-title">WhatsApp</h3>
+                        <div class="contact-info">62881027272909</div>
+                        <p class="contact-description">
+                            Chat langsung dengan tim support kami untuk mendapatkan bantuan cepat dan responsif.
+                        </p>
+                        <a href="https://api.whatsapp.com/send?phone=62881027272909&amp;text=Permisi%20admin,%20ingin%20bertanya%20mengenai%20layanan%20VanjaStore.%20Mohon%20bantuannya..." class="btn btn-outline-light btn-sm mt-3">
+                            <i class="fab fa-whatsapp me-2"></i>Chat Sekarang
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="contact-title">Email Support</h3>
+                        <div class="contact-info">storevanjaa@gmail.com</div>
+                        <p class="contact-description">
+                            Kirim email untuk pertanyaan detail atau bantuan teknis. Kami akan membalas dalam 24 jam.
+                        </p>
+                        <a href="mailto:storevanjaa@gmail.com" class="btn btn-outline-light btn-sm mt-3">
+                            <i class="fas fa-envelope me-2"></i>Kirim Email
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="contact-title">Jam Operasional</h3>
+                        <div class="contact-info">24/7 Available</div>
+                        <p class="contact-description">
+                            Layanan otomatis tersedia 24 jam. Support manual aktif pukul 08:00 - 22:00 WIB.
+                        </p>
+                        <div class="btn btn-outline-light btn-sm mt-3 disabled">
+                            <i class="fas fa-check-circle me-2"></i>Selalu Online
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Music Player -->
+            <div class="music-player" data-aos="fade-up" data-aos-delay="400">
+                <button class="music-control-btn" id="musicControlBtn">
+                    <i class="fas fa-play" id="musicIcon"></i>
+                    <span id="musicText">Putar Musik Latar</span>
+                </button>
+
+                <div class="music-progress-container">
+                    <progress class="music-progress" id="musicProgress" max="100" value="0"></progress>
+                </div>
+
+                <div class="music-time-info">
+                    <span id="currentTime">0:00</span>
+                    <span>🎵 Background Music</span>
+                    <span id="duration">0:00</span>
+                </div>
+
+                <div class="volume-control">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+
+                <audio id="backgroundMusic" loop>
+                    <source src="assets/music/happy-ending.html" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vanja Store</h3>
+                    <p>
+                        Terima kasih atas support dari kalian semua! Kami tidak akan sampai di sini tanpa kepercayaan dan dukungan Anda.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@inivanjaa" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/vanjaastore" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=62881027272909" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Layanan Kami</h3>
+                    <p>
+                        <!--Kami menyediakan layanan aktivasi premium seperti Canva, CapCut Pro, Spotify Student, Prime Video, dan VPN Express. -->
+                        <a href="feature.html"><strong>Klik di sini</strong></a> untuk cek daftar layanan lengkapnya.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Informasi</h3>
+                    <p><a href="#">Tentang Kami</a></p>
+                    <p><a href="index.html">Harga & Paket</a></p>
+                    <p><a href="#">Syarat & Ketentuan</a></p>
+                    <p><a href="#">Kebijakan Refund</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Dukungan</h3>
+                    <p><a href="#">Hubungi Kami</a></p>
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#">Panduan</a></p>
+                    <!--<p><a href="/dashboard">Dashboard Admin</a></p>-->
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 VanjaStore. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Made by SAMedia Digital Technology <i class="fas fa-heart text-danger"></i> in Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS
+            // AOS.init({
+            //     duration: 800,
+            //     once: true,
+            //     offset: 100
+            // });
+
+            AOS.init({
+                duration: 500, // Lebih cepat dari 800ms
+                once: true,
+                offset: 50, // Lebih kecil dari 100px
+                delay: 0, // Hapus global delay
+                easing: 'ease-out-quart'
+            });
+
+            // Loading Screen
+            const loadingScreen = document.getElementById('loadingScreen');
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    loadingScreen.style.opacity = '0';
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                    }, 500);
+                }, 1000);
+            });
+
+            // Navbar Scroll Effect
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Enhanced Music Player
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            const musicControlBtn = document.getElementById('musicControlBtn');
+            const musicIcon = document.getElementById('musicIcon');
+            const musicText = document.getElementById('musicText');
+            const musicProgress = document.getElementById('musicProgress');
+            const currentTimeSpan = document.getElementById('currentTime');
+            const durationSpan = document.getElementById('duration');
+            const volumeSlider = document.getElementById('volumeSlider');
+
+            function randomUsers() {
+            // ambil angka dasar (misalnya 450–550)
+            const min = 450;
+            const max = 1120;
+            const random = Math.floor(Math.random() * (max - min + 1)) + min;
+            document.getElementById("userCount").textContent = random;
+        }
+
+        // update tiap 5 detik
+        setInterval(randomUsers, 5000);
+        
+        // panggil pertama kali
+        randomUsers();
+
+            // Playlist
+            const playlist = [
+                "/assets/music/1.mp3",
+                "assets/music/2.mp3",
+                "assets/music/3.mp3",
+                "assets/music/4.mp3",
+                "assets/music/5.mp3",
+                "assets/music/6.mp3"
+            ];
+
+            let currentSongIndex = Math.floor(Math.random() * playlist.length);
+            let isPlaying = false;
+
+            function loadSong(index) {
+                backgroundMusic.src = playlist[index];
+                backgroundMusic.load();
+            }
+
+            function toggleMusic() {
+                if (isPlaying) {
+                    backgroundMusic.pause();
+                    musicIcon.classList.replace('fa-pause', 'fa-play');
+                    musicText.textContent = 'Putar Musik Latar';
+                    isPlaying = false;
+                } else {
+                    backgroundMusic.play().then(() => {
+                        musicIcon.classList.replace('fa-play', 'fa-pause');
+                        musicText.textContent = 'Hentikan Musik';
+                        isPlaying = true;
+                    }).catch(error => {
+                        console.log('Auto-play blocked:', error);
+                        alert('Silakan klik tombol untuk memutar musik');
+                    });
+                }
+            }
+
+            function formatTime(seconds) {
+                const minutes = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${minutes}:${secs.toString().padStart(2, '0')}`;
+            }
+
+            // Event Listeners
+            musicControlBtn.addEventListener('click', toggleMusic);
+
+            backgroundMusic.addEventListener('loadedmetadata', () => {
+                durationSpan.textContent = formatTime(backgroundMusic.duration);
+            });
+
+            backgroundMusic.addEventListener('timeupdate', () => {
+                const progress = (backgroundMusic.currentTime / backgroundMusic.duration) * 100;
+                musicProgress.value = progress;
+                currentTimeSpan.textContent = formatTime(backgroundMusic.currentTime);
+            });
+
+            backgroundMusic.addEventListener('ended', () => {
+                currentSongIndex = (currentSongIndex + 1) % playlist.length;
+                loadSong(currentSongIndex);
+                if (isPlaying) {
+                    backgroundMusic.play();
+                }
+            });
+
+            volumeSlider.addEventListener('input', () => {
+                backgroundMusic.volume = volumeSlider.value;
+            });
+
+            // Initialize
+            loadSong(currentSongIndex);
+            backgroundMusic.volume = 0.5;
+
+            // Smooth Scrolling for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Enhanced Snowflake Effect
+            let snowflakeCount = 0;
+            const maxSnowflakes = 15;
+
+            function createSnowflake() {
+                if (snowflakeCount >= maxSnowflakes) return;
+
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.innerHTML = ['❄️', '✨', '🌟'][Math.floor(Math.random() * 3)];
+                snowflake.style.left = Math.random() * window.innerWidth + 'px';
+                snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
+                snowflake.style.animationDuration = (Math.random() * 8 + 8) + 's';
+                snowflake.style.animationDelay = (Math.random() * 2) + 's';
+
+                document.body.appendChild(snowflake);
+                snowflakeCount++;
+
+                snowflake.addEventListener('animationend', () => {
+                    snowflake.remove();
+                    snowflakeCount--;
+                });
+            }
+
+            setInterval(createSnowflake, 2000);
+
+            // Security Measures
+            document.addEventListener('contextmenu', e => e.preventDefault());
+            document.addEventListener('keydown', function(e) {
+                if (
+                    e.ctrlKey && ['u', 's', 'c', 'x', 'v'].includes(e.key.toLowerCase()) ||
+                    e.key === 'F12' ||
+                    (e.ctrlKey && e.shiftKey && ['i', 'j'].includes(e.key.toLowerCase()))
+                ) {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+
+            // Auto scroll to products section if coming from external link
+            if (window.location.hash === '#products') {
+                setTimeout(() => {
+                    document.getElementById('products').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 1500);
+            }
+        });
+
+        // Perfect balance of smooth and performance
+        window.addEventListener('load', () => {
+            // Enhanced CSS for smooth scrolling
+            document.documentElement.style.cssText += 'scroll-behavior: smooth; scroll-padding-top: 100px;';
+
+            const loadingComplete = () => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+
+                    // Delayed smooth scroll for best user experience
+                    requestAnimationFrame(() => {
+                        setTimeout(() => {
+                            document.getElementById('products').scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }, 150);
+                    });
+                }, 300);
+            };
+
+            // Reduced loading time for snappier feel
+            setTimeout(loadingComplete, 600);
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from VanjaStore.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Oct 2025 04:09:09 GMT -->
+</html>

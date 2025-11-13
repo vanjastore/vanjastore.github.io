@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="id">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/img/vanja.jpeg" rel="icon">
+    <title>Layanan Capcut Premium 1 Bulan - VanjaStore</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0ea5e9 0%, #22d3ee 100%);
+            color: white;
+            padding: 80px 20px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,0 1000,0 1000,100 0,80"/></svg>') no-repeat;
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 15px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        .hero-logo {
+            max-height: 140px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .main-container {
+            margin-top: -40px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .card-detail {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .feature-section h4 {
+            color: #0ea5e9;
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+        }
+
+        .feature-list {
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f7fa 100%);
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            border-radius: 15px;
+            border-left: 4px solid #0ea5e9;
+        }
+
+        .feature-icon {
+            font-size: 1.2rem;
+            margin-right: 12px;
+            width: 30px;
+            display: inline-block;
+        }
+
+        .order-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+            border-radius: 20px;
+            padding: 40px;
+            border: 2px solid #e0f7fa;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .order-title {
+            color: #0ea5e9;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        .quantity-selector {
+            background: white;
+            border: 2px solid #e0f7fa;
+            border-radius: 15px;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            transition: border-color 0.3s ease;
+        }
+
+        .quantity-selector:focus-within {
+            border-color: #0ea5e9;
+            box-shadow: 0 0 0 0.2rem rgba(14, 165, 233, 0.1);
+        }
+
+        .quantity-selector label {
+            font-weight: 600;
+            color: #0ea5e9;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .quantity-select {
+            width: 100%;
+            border: none;
+            background: transparent;
+            font-size: 1.1rem;
+            color: #0ea5e9;
+            font-weight: 500;
+        }
+
+        .quantity-select:focus {
+            outline: none;
+        }
+
+        .price-display {
+            background: linear-gradient(135deg, #0ea5e9 0%, #22d3ee 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-display::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+            opacity: 0;
+        }
+
+        .price-display:hover::before {
+            opacity: 1;
+            left: 100%;
+        }
+
+        .price-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .price-amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .price-unit {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .btn-order {
+            background: linear-gradient(135deg, #0ea5e9 0%, #22d3ee 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(14, 165, 233, 0.3);
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-order::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-order:hover::before {
+            left: 100%;
+        }
+
+        .btn-order:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(14, 165, 233, 0.4);
+        }
+
+        .btn-order:active {
+            transform: translateY(0);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #e8f5e8 0%, #d4f5d4 100%);
+            border: 1px solid #b8e6b8;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .info-box .alert-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        footer {
+            background: #0ea5e9;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #87ceeb;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .card-detail {
+                padding: 30px 25px;
+                margin: 0 15px;
+            }
+
+            .order-section {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="assets/img/capcut.jpg" alt="CapCut Premium" class="hero-logo img-fluid">
+            <h1>Layanan CapCut Premium 1 Bulan - Akun Private</h1>
+            <p>Nikmati akses fitur editing video premium tanpa watermark dengan kualitas HD. Ideal untuk konten profesional Anda!</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="container main-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <div class="card-detail">
+                    <!-- FEATURES -->
+                    <div class="feature-section">
+
+                        <h4>🎬 Keunggulan Layanan Kami</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                <strong>Akses Premium Resmi</strong> - Fitur pengeditan video premium lengkap
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🚫</span>
+                                <strong>Tanpa Watermark</strong> - Output video bersih tanpa tanda air
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎥</span>
+                                <strong>Kualitas HD/4K</strong> - Export video hingga resolusi tertinggi
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📱</span>
+                                <strong>Multi Platform</strong> - Support Android, IOS, Windows (Laptop & PC)
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">⏳</span>
+                                <strong>Masa Aktif 1 Bulan</strong> - Berlaku selama 1 bulan penuh
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                <strong>Bergaransi</strong> - Layanan dijamin aman & terpercaya
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ORDER SECTION -->
+                    <div class="order-section">
+                        <h4 class="order-title">🛒 Pesan Sekarang</h4>
+
+                        <form action="https://api.whatsapp.com/send" method="GET" target="_blank" onsubmit="return buildWhatsAppURL()">
+                            <div class="quantity-selector">
+                                <label for="jumlah">Pilih Jumlah Akun</label>
+                                <select id="jumlah" class="quantity-select" onchange="updateHarga()" required>
+                                                                            <option value="1">1 Akun CapCut Premium</option>
+                                                                            <option value="2">2 Akun CapCut Premium</option>
+                                                                            <option value="3">3 Akun CapCut Premium</option>
+                                                                            <option value="4">4 Akun CapCut Premium</option>
+                                                                            <option value="5">5 Akun CapCut Premium</option>
+                                                                            <option value="6">6 Akun CapCut Premium</option>
+                                                                            <option value="7">7 Akun CapCut Premium</option>
+                                                                            <option value="8">8 Akun CapCut Premium</option>
+                                                                            <option value="9">9 Akun CapCut Premium</option>
+                                                                            <option value="10">10 Akun CapCut Premium</option>
+                                                                            <option value="11">11 Akun CapCut Premium</option>
+                                                                            <option value="12">12 Akun CapCut Premium</option>
+                                                                            <option value="13">13 Akun CapCut Premium</option>
+                                                                            <option value="14">14 Akun CapCut Premium</option>
+                                                                            <option value="15">15 Akun CapCut Premium</option>
+                                                                            <option value="16">16 Akun CapCut Premium</option>
+                                                                            <option value="17">17 Akun CapCut Premium</option>
+                                                                            <option value="18">18 Akun CapCut Premium</option>
+                                                                            <option value="19">19 Akun CapCut Premium</option>
+                                                                            <option value="20">20 Akun CapCut Premium</option>
+                                                                            <option value="21">21 Akun CapCut Premium</option>
+                                                                            <option value="22">22 Akun CapCut Premium</option>
+                                                                            <option value="23">23 Akun CapCut Premium</option>
+                                                                            <option value="24">24 Akun CapCut Premium</option>
+                                                                            <option value="25">25 Akun CapCut Premium</option>
+                                                                            <option value="26">26 Akun CapCut Premium</option>
+                                                                            <option value="27">27 Akun CapCut Premium</option>
+                                                                            <option value="28">28 Akun CapCut Premium</option>
+                                                                            <option value="29">29 Akun CapCut Premium</option>
+                                                                            <option value="30">30 Akun CapCut Premium</option>
+                                                                            <option value="31">31 Akun CapCut Premium</option>
+                                                                            <option value="32">32 Akun CapCut Premium</option>
+                                                                            <option value="33">33 Akun CapCut Premium</option>
+                                                                            <option value="34">34 Akun CapCut Premium</option>
+                                                                            <option value="35">35 Akun CapCut Premium</option>
+                                                                            <option value="36">36 Akun CapCut Premium</option>
+                                                                            <option value="37">37 Akun CapCut Premium</option>
+                                                                            <option value="38">38 Akun CapCut Premium</option>
+                                                                            <option value="39">39 Akun CapCut Premium</option>
+                                                                            <option value="40">40 Akun CapCut Premium</option>
+                                                                            <option value="41">41 Akun CapCut Premium</option>
+                                                                            <option value="42">42 Akun CapCut Premium</option>
+                                                                            <option value="43">43 Akun CapCut Premium</option>
+                                                                            <option value="44">44 Akun CapCut Premium</option>
+                                                                            <option value="45">45 Akun CapCut Premium</option>
+                                                                            <option value="46">46 Akun CapCut Premium</option>
+                                                                            <option value="47">47 Akun CapCut Premium</option>
+                                                                            <option value="48">48 Akun CapCut Premium</option>
+                                                                            <option value="49">49 Akun CapCut Premium</option>
+                                                                            <option value="50">50 Akun CapCut Premium</option>
+                                                                            <option value="51">51 Akun CapCut Premium</option>
+                                                                            <option value="52">52 Akun CapCut Premium</option>
+                                                                            <option value="53">53 Akun CapCut Premium</option>
+                                                                            <option value="54">54 Akun CapCut Premium</option>
+                                                                            <option value="55">55 Akun CapCut Premium</option>
+                                                                            <option value="56">56 Akun CapCut Premium</option>
+                                                                            <option value="57">57 Akun CapCut Premium</option>
+                                                                            <option value="58">58 Akun CapCut Premium</option>
+                                                                            <option value="59">59 Akun CapCut Premium</option>
+                                                                            <option value="60">60 Akun CapCut Premium</option>
+                                                                            <option value="61">61 Akun CapCut Premium</option>
+                                                                            <option value="62">62 Akun CapCut Premium</option>
+                                                                            <option value="63">63 Akun CapCut Premium</option>
+                                                                            <option value="64">64 Akun CapCut Premium</option>
+                                                                            <option value="65">65 Akun CapCut Premium</option>
+                                                                            <option value="66">66 Akun CapCut Premium</option>
+                                                                            <option value="67">67 Akun CapCut Premium</option>
+                                                                            <option value="68">68 Akun CapCut Premium</option>
+                                                                            <option value="69">69 Akun CapCut Premium</option>
+                                                                            <option value="70">70 Akun CapCut Premium</option>
+                                                                            <option value="71">71 Akun CapCut Premium</option>
+                                                                            <option value="72">72 Akun CapCut Premium</option>
+                                                                            <option value="73">73 Akun CapCut Premium</option>
+                                                                            <option value="74">74 Akun CapCut Premium</option>
+                                                                            <option value="75">75 Akun CapCut Premium</option>
+                                                                            <option value="76">76 Akun CapCut Premium</option>
+                                                                            <option value="77">77 Akun CapCut Premium</option>
+                                                                            <option value="78">78 Akun CapCut Premium</option>
+                                                                            <option value="79">79 Akun CapCut Premium</option>
+                                                                            <option value="80">80 Akun CapCut Premium</option>
+                                                                            <option value="81">81 Akun CapCut Premium</option>
+                                                                            <option value="82">82 Akun CapCut Premium</option>
+                                                                            <option value="83">83 Akun CapCut Premium</option>
+                                                                            <option value="84">84 Akun CapCut Premium</option>
+                                                                            <option value="85">85 Akun CapCut Premium</option>
+                                                                            <option value="86">86 Akun CapCut Premium</option>
+                                                                            <option value="87">87 Akun CapCut Premium</option>
+                                                                            <option value="88">88 Akun CapCut Premium</option>
+                                                                            <option value="89">89 Akun CapCut Premium</option>
+                                                                            <option value="90">90 Akun CapCut Premium</option>
+                                                                            <option value="91">91 Akun CapCut Premium</option>
+                                                                            <option value="92">92 Akun CapCut Premium</option>
+                                                                            <option value="93">93 Akun CapCut Premium</option>
+                                                                            <option value="94">94 Akun CapCut Premium</option>
+                                                                            <option value="95">95 Akun CapCut Premium</option>
+                                                                            <option value="96">96 Akun CapCut Premium</option>
+                                                                            <option value="97">97 Akun CapCut Premium</option>
+                                                                            <option value="98">98 Akun CapCut Premium</option>
+                                                                            <option value="99">99 Akun CapCut Premium</option>
+                                                                            <option value="100">100 Akun CapCut Premium</option>
+                                                                    </select>
+                            </div>
+
+                            <div class="price-display">
+                                <div class="price-label">Total Pembayaran</div>
+                                <div id="hargaFinal" class="price-amount">Rp 25.000</div>
+                                <div class="price-unit">Harga per Akun: Rp 25.000</div>
+                            </div>
+
+                            <div class="info-box">
+                                <strong>💳 Pembayaran QRIS Tersedia!</strong><br>
+                                <small>Bayar dengan mudah menggunakan QRIS - Melalui Bank & E Wallet</small>
+                            </div>
+
+                            <input type="hidden" name="phone" value="62881027272909">
+                            <input type="hidden" name="text" id="wa_message">
+                            <button type="submit" class="btn-order">
+                                💬 Pesan via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            &copy; 2025 VanjaStore. All Rights Reserved.<br>
+            <a href="terms.html">Syarat & Ketentuan</a>
+            <a href="refund_policy.html">Kebijakan Pengembalian Dana</a>
+        </div>
+    </footer>
+
+    <script>
+        const hargaPerAkun = 25000;
+
+        function updateHarga() {
+            const jumlah = parseInt(document.getElementById("jumlah").value);
+            const total = jumlah * hargaPerAkun;
+            document.getElementById("hargaFinal").innerText = `Rp ${total.toLocaleString('id-ID')}`;
+        }
+
+        function buildWhatsAppURL() {
+            const jumlah = document.getElementById("jumlah").value;
+            const total = jumlah * hargaPerAkun;
+
+            const text = `Halo Admin! 👋
+
+Saya ingin menggunakan *Layanan CapCut Premium 1 Bulan - AKUN PRIVATE*.
+
+📦 Detail Pesanan:
+🛒 Jumlah Akun: ${jumlah} akun
+💰 Total Pembayaran: Rp ${total.toLocaleString('id-ID')}
+💳 Metode Pembayaran: QRIS
+
+Mohon diproses ya. Terima kasih! 🙏`;
+
+            document.getElementById("wa_message").value = text;
+            return true;
+        }
+
+        // Disable right click
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // Disable common shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (
+                e.ctrlKey && ['u', 's', 'c', 'x', 'v'].includes(e.key.toLowerCase()) ||
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && ['i', 'j'].includes(e.key.toLowerCase()))
+            ) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from fransxeagle.com/capcut30hari by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Oct 2025 04:09:18 GMT -->
+</html>

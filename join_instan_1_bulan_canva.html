@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="id">
+
+
+<!-- Mirrored from fransxeagle.com/join_instan_1_bulan_canva by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Oct 2025 04:09:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/img/logo2.png" rel="icon">
+    <title>Canva Premium - FransXeagle</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #007bff 0%, #00bfff 100%);
+            color: white;
+            padding: 80px 20px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,0 1000,0 1000,100 0,80"/></svg>') no-repeat;
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 15px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        .hero-logo {
+            max-height: 140px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .main-container {
+            margin-top: -40px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .card-detail {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .feature-section h4 {
+            color: #007bff;
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+        }
+
+        .feature-list {
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f0f5 100%);
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            border-radius: 15px;
+            border-left: 4px solid #007bff;
+        }
+
+        .feature-icon {
+            font-size: 1.2rem;
+            margin-right: 12px;
+            width: 30px;
+            display: inline-block;
+        }
+
+        .order-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+            border-radius: 20px;
+            padding: 40px;
+            border: 2px solid #e8f0f5;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .order-title {
+            color: #007bff;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        .form-section {
+            margin-bottom: 25px;
+        }
+
+        .form-section label {
+            font-weight: 600;
+            color: #007bff;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .form-control,
+        .form-select,
+        .form-control-lg {
+            background: white;
+            border: 2px solid #e8f0f5;
+            border-radius: 15px;
+            padding: 15px 20px;
+            transition: border-color 0.3s ease;
+            font-size: 1.1rem;
+            color: #007bff;
+            font-weight: 500;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.1);
+            outline: none;
+        }
+
+        textarea.form-control {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .price-display {
+            background: linear-gradient(135deg, #007bff 0%, #00bfff 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-display::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+            opacity: 0;
+        }
+
+        .price-display:hover::before {
+            opacity: 1;
+            left: 100%;
+        }
+
+        .price-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .price-amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .price-unit {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .btn-order {
+            background: linear-gradient(135deg, #007bff 0%, #00bfff 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-order::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-order:hover::before {
+            left: 100%;
+        }
+
+        .btn-order:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(0, 123, 255, 0.4);
+        }
+
+        .btn-order:active {
+            transform: translateY(0);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #e8f5e8 0%, #d4f5d4 100%);
+            border: 1px solid #b8e6b8;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .alert-warning {
+            background: linear-gradient(135deg, #fff3cd 0%, #fef4d4 100%);
+            border: 1px solid #f0ad4e;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        .alert-info {
+            background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+            border: 1px solid #0dcaf0;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        footer {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #87ceeb;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .card-detail {
+                padding: 30px 25px;
+                margin: 0 15px;
+            }
+
+            .order-section {
+                padding: 25px 20px;
+            }
+        }
+
+        .custom-error-box {
+            background: linear-gradient(135deg, #fff3cd 0%, #fef4d4 100%);
+            border: 1px solid #f0ad4e;
+            border-radius: 15px;
+            padding: 18px 25px;
+            color: #856404;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            font-size: 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="assets/img/hero.png" alt="Canva Pro" class="hero-logo img-fluid">
+            <h1>Canva Premium (AUTO BRAND DESIGNER)</h1>
+            <p>Nikmati akses kolaborasi desain dengan fitur lengkap untuk kebutuhan personal atau tim Anda.</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="container main-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card-detail">
+                    <!-- FEATURES -->
+                    <div class="feature-section">
+                        <h4>✨ Fitur Unggulan:</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                <strong>Akses Premium Legal</strong> - Akses penuh ke fitur Premium secara legal
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🔗</span>
+                                <strong>Tim Invite Resmi</strong> - Bergabung melalui link undangan tim resmi
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎓</span>
+                                <strong>Untuk Semua</strong> - Cocok untuk pelajar, kreator konten, hingga UMKM
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🚫</span>
+                                <strong>Tanpa Watermark</strong> - Ekspor hasil karya tanpa watermark
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🛡️</span>
+                                <strong>Bergaransi</strong> - Garansi penuh 1 bulan penggantian jika bermasalah
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ORDER SECTION -->
+                    <div class="order-section">
+                        <h4 class="order-title">🛒 Pesan Sekarang</h4>
+
+                        <!-- MAYAR FORM (STREAMLINED) -->
+                        <form id="orderForm" action="https://fransxeagle.com/midtrans/generate-qr-bulan" method="POST">
+                            <input type="hidden" name="_token" value="aDBe4omkyqz1epxhYAESuw5I2Sw3FLmv4viBWzLF" autocomplete="off">
+                            <!-- Jumlah Akun -->
+                            <div class="form-section">
+                                <label for="jumlah">📢 Jumlah Akun</label>
+                                <select id="jumlah" class="form-select" onchange="updateHarga()" required>
+                                                                            <option value="1">1 Akun Canva Premium</option>
+                                                                            <option value="2">2 Akun Canva Premium</option>
+                                                                            <option value="3">3 Akun Canva Premium</option>
+                                                                            <option value="4">4 Akun Canva Premium</option>
+                                                                            <option value="5">5 Akun Canva Premium</option>
+                                                                            <option value="6">6 Akun Canva Premium</option>
+                                                                            <option value="7">7 Akun Canva Premium</option>
+                                                                            <option value="8">8 Akun Canva Premium</option>
+                                                                            <option value="9">9 Akun Canva Premium</option>
+                                                                            <option value="10">10 Akun Canva Premium</option>
+                                                                            <option value="11">11 Akun Canva Premium</option>
+                                                                            <option value="12">12 Akun Canva Premium</option>
+                                                                            <option value="13">13 Akun Canva Premium</option>
+                                                                            <option value="14">14 Akun Canva Premium</option>
+                                                                            <option value="15">15 Akun Canva Premium</option>
+                                                                            <option value="16">16 Akun Canva Premium</option>
+                                                                            <option value="17">17 Akun Canva Premium</option>
+                                                                            <option value="18">18 Akun Canva Premium</option>
+                                                                            <option value="19">19 Akun Canva Premium</option>
+                                                                            <option value="20">20 Akun Canva Premium</option>
+                                                                            <option value="21">21 Akun Canva Premium</option>
+                                                                            <option value="22">22 Akun Canva Premium</option>
+                                                                            <option value="23">23 Akun Canva Premium</option>
+                                                                            <option value="24">24 Akun Canva Premium</option>
+                                                                            <option value="25">25 Akun Canva Premium</option>
+                                                                            <option value="26">26 Akun Canva Premium</option>
+                                                                            <option value="27">27 Akun Canva Premium</option>
+                                                                            <option value="28">28 Akun Canva Premium</option>
+                                                                            <option value="29">29 Akun Canva Premium</option>
+                                                                            <option value="30">30 Akun Canva Premium</option>
+                                                                            <option value="31">31 Akun Canva Premium</option>
+                                                                            <option value="32">32 Akun Canva Premium</option>
+                                                                            <option value="33">33 Akun Canva Premium</option>
+                                                                            <option value="34">34 Akun Canva Premium</option>
+                                                                            <option value="35">35 Akun Canva Premium</option>
+                                                                            <option value="36">36 Akun Canva Premium</option>
+                                                                            <option value="37">37 Akun Canva Premium</option>
+                                                                            <option value="38">38 Akun Canva Premium</option>
+                                                                            <option value="39">39 Akun Canva Premium</option>
+                                                                            <option value="40">40 Akun Canva Premium</option>
+                                                                            <option value="41">41 Akun Canva Premium</option>
+                                                                            <option value="42">42 Akun Canva Premium</option>
+                                                                            <option value="43">43 Akun Canva Premium</option>
+                                                                            <option value="44">44 Akun Canva Premium</option>
+                                                                            <option value="45">45 Akun Canva Premium</option>
+                                                                            <option value="46">46 Akun Canva Premium</option>
+                                                                            <option value="47">47 Akun Canva Premium</option>
+                                                                            <option value="48">48 Akun Canva Premium</option>
+                                                                            <option value="49">49 Akun Canva Premium</option>
+                                                                            <option value="50">50 Akun Canva Premium</option>
+                                                                            <option value="51">51 Akun Canva Premium</option>
+                                                                            <option value="52">52 Akun Canva Premium</option>
+                                                                            <option value="53">53 Akun Canva Premium</option>
+                                                                            <option value="54">54 Akun Canva Premium</option>
+                                                                            <option value="55">55 Akun Canva Premium</option>
+                                                                            <option value="56">56 Akun Canva Premium</option>
+                                                                            <option value="57">57 Akun Canva Premium</option>
+                                                                            <option value="58">58 Akun Canva Premium</option>
+                                                                            <option value="59">59 Akun Canva Premium</option>
+                                                                            <option value="60">60 Akun Canva Premium</option>
+                                                                            <option value="61">61 Akun Canva Premium</option>
+                                                                            <option value="62">62 Akun Canva Premium</option>
+                                                                            <option value="63">63 Akun Canva Premium</option>
+                                                                            <option value="64">64 Akun Canva Premium</option>
+                                                                            <option value="65">65 Akun Canva Premium</option>
+                                                                            <option value="66">66 Akun Canva Premium</option>
+                                                                            <option value="67">67 Akun Canva Premium</option>
+                                                                            <option value="68">68 Akun Canva Premium</option>
+                                                                            <option value="69">69 Akun Canva Premium</option>
+                                                                            <option value="70">70 Akun Canva Premium</option>
+                                                                            <option value="71">71 Akun Canva Premium</option>
+                                                                            <option value="72">72 Akun Canva Premium</option>
+                                                                            <option value="73">73 Akun Canva Premium</option>
+                                                                            <option value="74">74 Akun Canva Premium</option>
+                                                                            <option value="75">75 Akun Canva Premium</option>
+                                                                            <option value="76">76 Akun Canva Premium</option>
+                                                                            <option value="77">77 Akun Canva Premium</option>
+                                                                            <option value="78">78 Akun Canva Premium</option>
+                                                                            <option value="79">79 Akun Canva Premium</option>
+                                                                            <option value="80">80 Akun Canva Premium</option>
+                                                                            <option value="81">81 Akun Canva Premium</option>
+                                                                            <option value="82">82 Akun Canva Premium</option>
+                                                                            <option value="83">83 Akun Canva Premium</option>
+                                                                            <option value="84">84 Akun Canva Premium</option>
+                                                                            <option value="85">85 Akun Canva Premium</option>
+                                                                            <option value="86">86 Akun Canva Premium</option>
+                                                                            <option value="87">87 Akun Canva Premium</option>
+                                                                            <option value="88">88 Akun Canva Premium</option>
+                                                                            <option value="89">89 Akun Canva Premium</option>
+                                                                            <option value="90">90 Akun Canva Premium</option>
+                                                                            <option value="91">91 Akun Canva Premium</option>
+                                                                            <option value="92">92 Akun Canva Premium</option>
+                                                                            <option value="93">93 Akun Canva Premium</option>
+                                                                            <option value="94">94 Akun Canva Premium</option>
+                                                                            <option value="95">95 Akun Canva Premium</option>
+                                                                            <option value="96">96 Akun Canva Premium</option>
+                                                                            <option value="97">97 Akun Canva Premium</option>
+                                                                            <option value="98">98 Akun Canva Premium</option>
+                                                                            <option value="99">99 Akun Canva Premium</option>
+                                                                            <option value="100">100 Akun Canva Premium</option>
+                                                                    </select>
+                            </div>
+
+                            <!-- Email Customer -->
+                            <div class="form-section">
+                                <label for="customer_email">📧 Email Aktif <span style="color: #007bff; font-weight: bold;">(wajib benar)</span></label>
+                                <div class="alert-warning mb-3">
+                                    ⚠️ <strong>Pastikan email BENAR.</strong>
+                                </div>
+                                <textarea id="customer_email" class="form-control" rows="3" placeholder="emailkamu@email.com" required></textarea>
+                                <small class="text-muted mt-2 d-block">
+                                    Pisahkan dengan koma jika membeli lebih dari satu akun.<br>
+                                    <strong>Contoh:</strong> <code>email1@gmail.com, email2@gmail.com</code>
+                                </small>
+                            </div>
+
+                            <!-- Price Display untuk Mayar (Simplified) -->
+                            <div class="price-display">
+                                <div class="price-label">Total Pembayaran</div>
+                                <div id="hargaFinal" class="price-amount">Rp 3.000</div>
+                                <div class="price-unit">
+                                    <small style="opacity: 0.9;">💰 Harga terjangkau untuk semua!</small>
+                                </div>
+                            </div>
+
+                            <div class="info-box">
+                                <strong>💳 Pembayaran QRIS</strong><br>
+                                <small>✅ Proses Hitungan Detik&nbsp;•&nbsp; 💰 Fee rendah &nbsp;•&nbsp; 🔒 Aman & Terpercaya</small>
+                            </div>
+
+                            <!-- Hidden inputs -->
+                            <input type="hidden" name="phone" value="6282160050027">
+                            <input type="hidden" name="jumlah" id="jumlahHidden">
+                            <input type="hidden" name="emails" id="emailsHidden">
+
+                            <button type="button" class="btn btn-success btn-order" onclick="handleLanjutBayar()">
+                                🚀 Lanjut Bayar Sekarang
+                            </button>
+
+
+                            <!-- Error box -->
+                            <div id="formErrorBox" class="custom-error-box d-none mt-4" role="alert">
+                                <span class="fw-bold text-danger">⚠️ Terjadi kesalahan:</span>
+                                <div id="formErrorText" class="mt-1 text-dark"></div>
+                            </div>
+                        </form>
+
+                        <!-- Video Panduan -->
+                        <div class="alert-info text-center mt-4">
+                            <strong>Masih bingung?</strong> Yuk tonton panduan cara order di video ini:
+                            <br>
+                            <a href="https://youtu.be/lVtvQ8MCA4o" target="_blank" class="btn btn-sm btn-danger mt-2 rounded-pill px-4">
+                                🎬 Tonton di YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            &copy; 2025 FransXeagle. All Rights Reserved.<br>
+            <a href="terms.html">Syarat & Ketentuan</a>
+            <a href="refund_policy.html">Kebijakan Pengembalian Dana</a>
+        </div>
+    </footer>
+
+    <script>
+        // ===== SIMPLIFIED PRICING CONFIGURATION =====
+        const hargaPerAkun = 3000;
+
+        function updateHarga() {
+            const jumlah = parseInt(document.getElementById("jumlah").value);
+            const total = jumlah * hargaPerAkun;
+
+            document.getElementById("hargaFinal").innerText = `Rp ${total.toLocaleString('id-ID')}`;
+        }
+
+        function handleLanjutBayar() {
+            const jumlah = document.getElementById("jumlah").value;
+            const email = document.getElementById("customer_email").value;
+            const errorBox = document.getElementById("formErrorBox");
+            const errorText = document.getElementById("formErrorText");
+
+            // Reset error box
+            errorBox.classList.add("d-none");
+            errorText.innerHTML = "";
+
+            const emailList = email.split(',').map(e => e.trim()).filter(e => e.length > 0);
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Validasi jumlah email
+            if (emailList.length !== parseInt(jumlah)) {
+                errorText.innerHTML = `Jumlah akun yang dipilih (<strong>${jumlah}</strong>) tidak sesuai dengan jumlah email yang ditulis (<strong>${emailList.length}</strong>).`;
+                errorBox.classList.remove("d-none");
+                errorBox.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+                return;
+            }
+
+            // Validasi setiap email
+            for (let emailItem of emailList) {
+                if (!emailRegex.test(emailItem)) {
+                    errorText.innerHTML = `Email "<strong>${emailItem}</strong>" tidak valid. Harap periksa kembali penulisan email Anda.`;
+                    errorBox.classList.remove("d-none");
+                    errorBox.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                    return;
+                }
+            }
+
+            // Semua valid, isi input hidden
+            document.getElementById("jumlahHidden").value = jumlah;
+            document.getElementById("emailsHidden").value = email;
+
+            // Tampilkan modal konfirmasi
+            const modal = new bootstrap.Modal(document.getElementById("modalKonfirmasiEmail"));
+            modal.show();
+        }
+
+        function submitFinalOrder() {
+            const modal = bootstrap.Modal.getInstance(document.getElementById("modalKonfirmasiEmail"));
+            modal.hide();
+            // Submit form langsung ke Mayar
+            document.getElementById("orderForm").submit();
+        }
+
+        // Disable right click & shortcuts
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('keydown', function(e) {
+            if (
+                e.ctrlKey && ['u', 's', 'c', 'x', 'v'].includes(e.key.toLowerCase()) ||
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && ['i', 'j'].includes(e.key.toLowerCase()))
+            ) {
+                e.preventDefault();
+            }
+        });
+
+        // Initialize pricing on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateHarga();
+        });
+    </script>
+
+    <!-- MODAL KONFIRMASI EMAIL -->
+    <div class="modal fade" id="modalKonfirmasiEmail" tabindex="-1" aria-labelledby="modalKonfirmasiEmailLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg border-0" style="border-radius: 20px; overflow: hidden;">
+                <div class="modal-header bg-warning text-dark" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
+                    <h5 class="modal-title fw-bold d-flex align-items-center gap-2" id="modalKonfirmasiEmailLabel">
+                        ⚠️ Penting! <span class="text-uppercase">Wajib DiLiterasi</span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center px-2 px-sm-3">
+                        <div class="alert alert-warning d-flex align-items-center justify-content-center gap-2 rounded-pill px-4 py-2 shadow-sm mt-2 mb-4"
+                            role="alert" style="max-width: 500px; margin: 0 auto;">
+                            ⚠️ <strong>Pastikan email <span class="text-success">aktif</span> dan bisa digunakan untuk join tim</strong>
+                        </div>
+                        <p class="fs-6 fs-sm-5 mb-3">
+                            Setelah berhasil <strong>bayar via QRIS</strong>, segera
+                            <span class="fw-bold text-danger">kembali ke halaman scan QRIS</span>
+                            untuk <a class="text-danger fw-bold text-decoration-none">cek status pesananmu</a>.
+                        </p>
+                        <div class="d-flex align-items-center justify-content-center text-start p-3 p-sm-4 rounded-3 shadow-sm mb-4"
+                            style="background: linear-gradient(135deg, #e0f2fe, #f0f9ff); border-left: 6px solid #0ea5e9;">
+                            <div class="me-2 fs-5">⏳</div>
+                            <div>
+                                <span>Sistem akan otomatis menampilkan pesanan kamu</span><br>
+                                <strong class="text-primary">setelah pembayaran terkonfirmasi.</strong>
+                            </div>
+                        </div>
+                        <button type="button"
+                            class="btn btn-success d-inline-flex align-items-center justify-content-center gap-2 rounded-pill px-4 py-2 fw-semibold shadow"
+                            style="min-width: 240px;"
+                            data-bs-dismiss="modal"
+                            onclick="submitFinalOrder()">
+                            ✅ Ya, Saya Mengerti
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+<!-- Mirrored from fransxeagle.com/join_instan_1_bulan_canva by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Oct 2025 04:09:43 GMT -->
+</html>
